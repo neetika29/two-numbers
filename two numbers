@@ -1,0 +1,36 @@
+// taking input
+# t = int(input())
+# lst = []
+
+//splitting input and convert map to list
+# for i in range(t):
+#     x = (input())
+#     z= x.split()
+#     x1 = list(map(int, z))
+#     lst.append(x1)
+
+# for j in range(len(lst)):
+#     a = lst[j][0]
+#     b = lst[j][1]
+#     n = lst[j][2]
+
+//control statements 
+#     if n%2!=0:
+#         c = a * (2 ** (n - 1))
+#         d = b * (2 ** (n - 2))
+#     else:
+#         c=a*(2**(n/2))
+#         d=b*(2**(n/2))
+#     if c > d:
+#         print(int(c / d))
+#     else:
+#         print(int(d / c))
+t=int(input())
+// chaecking according to odd and even positions
+for tc in range(t):
+    a,b,n=map(int,input().split())
+    if n%2==0:
+        print(max(a,b)//min(a,b))
+    else:
+        print(max(2*a,b)//min(2*a,b))
+    
